@@ -15,14 +15,14 @@ AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 AESD_ASSIGNMENTS_MODULE_SUBDIRS = portAudioDemo
 AESD_ASSIGNMNETS_MODULE_MAKE_OPTS = KVERSION=$(LINUX_VERSION_PROBED)
 
-define AUDIO_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/portAudioDemo 
-endef
+#define AUDIO_BUILD_CMDS
+#	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/portAudioDemo 
+#endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
-define AUDIO_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/portAudioDemo/instrument $(TARGET_DIR)/usr/bin
+#define AUDIO_INSTALL_TARGET_CMDS
+#	$(INSTALL) -m 0755 $(@D)/portAudioDemo/instrument $(TARGET_DIR)/usr/bin
 
-endef
+#endef
 
 $(eval $(generic-package))

@@ -1,4 +1,4 @@
 config BR2_PACKAGE_AUDIO
-	bool "aesd-final-project"
+	bool "audio"
 	help
 	  Add audio package
