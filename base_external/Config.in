@@ -1,2 +1,1 @@
 source "$BR2_EXTERNAL_audio_base_PATH/package/audio/Config.in"
-source "$BR2_EXTERNAL_audio_base_PATH/package/aesd-assignments/Config.in"
